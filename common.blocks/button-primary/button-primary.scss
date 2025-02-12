@@ -1,0 +1,35 @@
+.button-primary {
+  width: 264.16px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  border-right: 6px solid white;
+  outline: none;
+  cursor: pointer;
+  background-color: #C2AB81;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: white;
+  transform:  skew(-17deg, 0deg);
+  transition: background-color .2s ease-in-out;
+
+  span {
+    display: inline-block;
+    transform:  skew(17deg, 0deg);
+  }
+
+  &:hover {
+    background-color: lighten(#C2AB81, 10);
+  }
+}
+
+
+
+
+

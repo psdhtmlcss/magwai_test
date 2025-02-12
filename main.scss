@@ -4,3 +4,10 @@
 @use './common.blocks/container/container.scss';
 @use './common.blocks/header/header.scss';
 @use './common.blocks/header/__container/header__container.scss';
+@use './common.blocks/nav/nav.scss';
+@use './common.blocks/nav/__link/nav__link.scss';
+@use './common.blocks/button-primary/button-primary.scss';
+@use './common.blocks/button-primary/__decoration/button-primary__decoration.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');

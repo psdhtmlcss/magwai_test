@@ -1,0 +1,16 @@
+.nav__link {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: #C2AB81;
+  }
+}
