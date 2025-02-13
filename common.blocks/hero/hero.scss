@@ -1,3 +1,9 @@
+@use '__content/hero__content.scss';
+@use '__container/hero__container.scss';
+@use '__heading/hero__heading.scss';
+@use '__paragraph/hero__paragraph.scss';
+@use '__button-primary/hero__button-primary.scss';
+
 .hero {
   display: flex;
   align-items: end;

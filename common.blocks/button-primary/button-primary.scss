@@ -1,5 +1,6 @@
 @use '../variables' as v;
 @use '../mixins' as m;
+@use '__decoration/button-primary__decoration.scss';
 
 .button-primary {
   height: 60px;

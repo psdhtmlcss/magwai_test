@@ -1,3 +1,13 @@
+@use '__container/header__container.scss';
+@use '__buttons/header__buttons.scss';
+@use '__button-icon/header__button-icon.scss';
+@use '__button-primary/header__button-primary.scss';
+@use '__button-toggle-menu/header__button-toggle-menu.scss';
+@use '__button-toggle-menu/header__button-toggle-menu_active.scss';
+@use '__nav/header__nav.scss';
+@use '__nav/header__nav_show.scss';
+@use '__logo/header__logo.scss';
+
 .header {
   height: 60px;
 }

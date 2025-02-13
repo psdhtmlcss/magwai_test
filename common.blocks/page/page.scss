@@ -1,4 +1,6 @@
 @use '../variables' as v;
+@use '__body/page__body.scss';
+@use '__header/page__header.scss';
 
 .page {
   background-color: v.$bg-color;
