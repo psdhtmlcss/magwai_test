@@ -1,0 +1,13 @@
+@use '../variables' as v;
+@use '__body/card__body.scss';
+@use '__image/card__image.scss';
+@use '__image-wrapper/card__image-wrapper.scss';
+@use '__title/card__title.scss';
+@use '__text/card__text.scss';
+@use '__text/card__text_large.scss';
+@use '__posted/card__posted.scss';
+@use '__button/card__button.scss';
+
+.card {
+  background-color: v.$white-color;
+}

@@ -5,6 +5,7 @@
   @include m.font-montserrat(700);
   font-size: 42px;
   line-height: 51.2px;
+  text-transform: uppercase;
   color: v.$white-color;
   margin: 0;
 }

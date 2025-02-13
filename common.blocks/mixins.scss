@@ -8,3 +8,10 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin font-mulish($weight: 600, $style: normal) {
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: $style;
+}

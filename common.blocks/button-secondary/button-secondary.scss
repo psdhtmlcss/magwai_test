@@ -1,0 +1,21 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.button-secondary {
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: v.$bg-button-dark;
+  @include m.font-mulish(600);
+  font-size: 14px;
+  line-height: 17.57px;
+  color: v.$text-color-white;
+  @include m.transition(background-color);
+
+  &:hover {
+    background-color: v.$bg-button-light;
+  }
+}

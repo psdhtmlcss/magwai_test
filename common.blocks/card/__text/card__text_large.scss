@@ -1,0 +1,7 @@
+@use '../../variables.scss' as v;
+
+.card__text_large {
+  font-size: 16px;
+  line-height: 26px;
+  color: v.$text-color-dark;
+}

@@ -1,0 +1,14 @@
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
+.card__posted {
+  margin: 0 0 25px;
+  @include m.font-montserrat(400);
+  font-size: 12px;
+  line-height: 24px;
+  color: v.$text-color-light;
+
+  strong {
+    font-weight: 700;
+  }
+}

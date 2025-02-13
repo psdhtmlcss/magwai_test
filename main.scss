@@ -5,6 +5,7 @@
 @use './common.blocks/nav/nav.scss';
 @use './common.blocks/heading/heading.scss';
 @use './common.blocks/button-primary/button-primary.scss';
+@use './common.blocks/button-secondary/button-secondary.scss';
 @use './common.blocks/button-primary/__decoration/button-primary__decoration.scss';
 @use './common.blocks/button-icon/button-icon.scss';
 @use './common.blocks/button-toggle-menu/button-toggle-menu.scss';
@@ -26,4 +27,5 @@
 @use './common.blocks/hero/__heading/hero__heading.scss';
 @use './common.blocks/hero/__paragraph/hero__paragraph.scss';
 @use './common.blocks/hero/__button-primary/hero__button-primary.scss';
+@use './common.blocks/card/card.scss';
 
