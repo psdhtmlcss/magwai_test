@@ -1,9 +1,19 @@
 .header__button-primary {
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 767px) {
+    border-right: 0;
+    width: calc(100% - 15px);
+  }
 
-    .button-primary__decoration {
+  .button-primary__decoration {
+
+    @media screen and (max-width: 1365px) {
       padding-left: 32px;
       padding-right: 41px;
+    }
+
+    @media screen and (max-width: 767px) {
+      border-right: 0;
+      padding: 0;
     }
   }
 }

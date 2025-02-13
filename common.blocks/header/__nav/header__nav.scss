@@ -22,8 +22,16 @@
     background-color: v.$bg-color;
     overflow-y: auto;
     @include m.transition(transform);
+  }
 
-    .nav__link {
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+    top: 71px;
+  }
+
+  .nav__link {
+
+    @media screen and (max-width: 1270px) {
       display: block;
       padding: 0 50px;
       margin-bottom: 15px;
@@ -35,6 +43,14 @@
       &:hover {
         text-shadow: none;
       }
+    }
+    
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0 15px;
+      text-shadow: none;
+      -webkit-text-stroke: 1px #808080;
     }
   }
 }
