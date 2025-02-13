@@ -3,6 +3,7 @@
 @use './common.blocks/header/header.scss';
 @use './common.blocks/logo/logo.scss';
 @use './common.blocks/nav/nav.scss';
+@use './common.blocks/heading/heading.scss';
 @use './common.blocks/button-primary/button-primary.scss';
 @use './common.blocks/button-primary/__decoration/button-primary__decoration.scss';
 @use './common.blocks/button-icon/button-icon.scss';
@@ -19,4 +20,10 @@
 @use './common.blocks/header/__nav/header__nav_show.scss';
 @use './common.blocks/header/__logo/header__logo.scss';
 @use './common.blocks/nav/__link/nav__link.scss';
+@use './common.blocks/hero/hero.scss';
+@use './common.blocks/hero/__content/hero__content.scss';
+@use './common.blocks/hero/__container/hero__container.scss';
+@use './common.blocks/hero/__heading/hero__heading.scss';
+@use './common.blocks/hero/__paragraph/hero__paragraph.scss';
+@use './common.blocks/hero/__button-primary/hero__button-primary.scss';
 

@@ -1,0 +1,11 @@
+.hero__button-primary {
+  @media screen and (max-width: 767px) {
+    height: 46.69px;
+    margin-left: 6px;
+
+    .button-primary__decoration {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

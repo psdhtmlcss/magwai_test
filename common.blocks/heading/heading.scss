@@ -1,0 +1,10 @@
+@use '../variables.scss' as v;
+@use '../mixins.scss' as m;
+
+.heading {
+  @include m.font-montserrat(700);
+  font-size: 42px;
+  line-height: 51.2px;
+  color: v.$white-color;
+  margin: 0;
+}
