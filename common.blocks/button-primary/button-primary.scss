@@ -1,3 +1,6 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
 .button-primary {
   width: 264.16px;
   height: 60px;
@@ -7,25 +10,22 @@
   border-right: 6px solid white;
   outline: none;
   cursor: pointer;
-  background-color: #C2AB81;
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+  background-color: v.$bg-button-light;
+  @include m.font-montserrat(700);
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  color: white;
-  transform:  skew(-17deg, 0deg);
-  transition: background-color .2s ease-in-out;
+  color: v.$text-color-white;
+  transform:  skew(v.$skew-negative, 0deg);
+  @include m.transition(background-color);
 
   span {
     display: inline-block;
-    transform:  skew(17deg, 0deg);
+    transform:  skew(v.$skew-positive, 0deg);
   }
 
   &:hover {
-    background-color: lighten(#C2AB81, 10);
+    background-color: lighten(v.$bg-button-light, 10);
   }
 }
 

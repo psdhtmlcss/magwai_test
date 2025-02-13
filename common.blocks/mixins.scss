@@ -1,0 +1,10 @@
+@mixin transition($property: all) {
+  transition: $property 0.2s ease-in-out;
+}
+
+@mixin font-montserrat($weight: 400, $style: normal) {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: $style;
+}

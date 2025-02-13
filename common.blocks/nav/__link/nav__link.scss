@@ -1,16 +1,16 @@
+@use '../../variables' as v;
+@use '../../mixins' as m;
+
 .nav__link {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+  @include m.font-montserrat(700);
   font-size: 14px;
   line-height: 21px;
-  color: white;
+  color: v.$text-color-white;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color .2s ease-in-out;
+  @include m.transition(color);
 
   &:hover {
-    color: #C2AB81;
+    color: v.$beige-color;
   }
 }

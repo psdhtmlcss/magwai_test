@@ -1,3 +1,6 @@
+@use '../variables.scss' as v;
+@use '../mixins.scss' as m;
+
 .button-icon {
   width: 74.16px;
   height: 60px;
@@ -8,8 +11,8 @@
   outline: none;
   cursor: pointer;
   opacity: .4;
-  transform:  skew(-17deg, 0deg);
-  transition: opacity .2s ease-in-out;
+  transform:  skew(v.$skew-negative, 0deg);
+  @include m.transition(opacity);
 
   &:hover {
     opacity: .8;
