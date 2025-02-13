@@ -2,4 +2,14 @@ $container-width: 1720.2px;
 
 .container {
   max-width: $container-width;
+
+  @media screen and (max-width: $container-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

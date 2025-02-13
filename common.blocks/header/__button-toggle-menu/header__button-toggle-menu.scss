@@ -1,0 +1,7 @@
+.header__button-toggle-menu {
+  display: none;
+
+  @media screen and (max-width: 1270px) {
+    display: block;
+  }
+}

@@ -1,0 +1,9 @@
+.header__button-primary {
+  @media screen and (max-width: 1365px) {
+
+    .button-primary__decoration {
+      padding-left: 32px;
+      padding-right: 41px;
+    }
+  }
+}

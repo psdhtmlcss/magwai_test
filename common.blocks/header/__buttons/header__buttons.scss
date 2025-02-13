@@ -2,4 +2,16 @@
   margin-left: auto;
   display: flex;
   gap: 30px;
+
+  @media screen and (max-width: 1365px) {
+    gap: 8px;
+  }
+
+  @media screen and (max-width: 1270px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

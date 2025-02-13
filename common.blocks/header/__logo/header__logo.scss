@@ -1,0 +1,8 @@
+.header__logo {
+  @media screen and (max-width: 767px) {
+    svg {
+      width: 112.5px;
+      height: auto;
+    }
+  }
+}

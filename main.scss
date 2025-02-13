@@ -1,14 +1,19 @@
 @use './common.blocks/page/page.scss';
-@use './common.blocks/page/__body/page__body.scss';
-@use './common.blocks/page/__header/page__header.scss';
 @use './common.blocks/container/container.scss';
 @use './common.blocks/header/header.scss';
-@use './common.blocks/header/__container/header__container.scss';
-@use './common.blocks/header/__buttons/header__buttons.scss';
-@use './common.blocks/header/__nav/header__nav.scss';
 @use './common.blocks/logo/logo.scss';
 @use './common.blocks/nav/nav.scss';
-@use './common.blocks/nav/__link/nav__link.scss';
 @use './common.blocks/button-primary/button-primary.scss';
 @use './common.blocks/button-primary/__decoration/button-primary__decoration.scss';
 @use './common.blocks/button-icon/button-icon.scss';
+@use './common.blocks/button-toggle-menu/button-toggle-menu.scss';
+@use './common.blocks/page/__body/page__body.scss';
+@use './common.blocks/page/__header/page__header.scss';
+@use './common.blocks/header/__container/header__container.scss';
+@use './common.blocks/header/__buttons/header__buttons.scss';
+@use './common.blocks/header/__button-primary/header__button-primary.scss';
+@use './common.blocks/header/__button-toggle-menu/header__button-toggle-menu.scss';
+@use './common.blocks/header/__nav/header__nav.scss';
+@use './common.blocks/header/__logo/header__logo.scss';
+@use './common.blocks/nav/__link/nav__link.scss';
+
