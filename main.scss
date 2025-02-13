@@ -13,7 +13,9 @@
 @use './common.blocks/header/__buttons/header__buttons.scss';
 @use './common.blocks/header/__button-primary/header__button-primary.scss';
 @use './common.blocks/header/__button-toggle-menu/header__button-toggle-menu.scss';
+@use './common.blocks/header/__button-toggle-menu/header__button-toggle-menu_active.scss';
 @use './common.blocks/header/__nav/header__nav.scss';
+@use './common.blocks/header/__nav/header__nav_show.scss';
 @use './common.blocks/header/__logo/header__logo.scss';
 @use './common.blocks/nav/__link/nav__link.scss';
 

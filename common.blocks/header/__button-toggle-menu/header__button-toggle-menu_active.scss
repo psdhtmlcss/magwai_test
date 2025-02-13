@@ -1,0 +1,9 @@
+@use '../../variables.scss' as v;
+
+.header__button-toggle-menu_active {
+  svg {
+    path {
+      fill: v.$beige-color;
+    }
+  }
+}

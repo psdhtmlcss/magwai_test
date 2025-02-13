@@ -1,3 +1,6 @@
+@use '../../variables.scss' as v;
+@use '../../mixins.scss' as m;
+
 .header__nav {
   margin-left: 76px;
 
@@ -6,6 +9,32 @@
   }
 
   @media screen and (max-width: 1270px) {
-    display: none;
+    transform: translateX(-100%);
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 59px;
+    margin: 0;
+    background-color: v.$bg-color;
+    overflow-y: auto;
+    @include m.transition(transform);
+
+    .nav__link {
+      display: block;
+      padding: 0 50px;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 0 #808080, -1px -1px 0 #808080; 
+      font-size: 36px;
+      line-height: 150%;
+      color: v.$bg-color;
+
+      &:hover {
+        text-shadow: none;
+      }
+    }
   }
 }
