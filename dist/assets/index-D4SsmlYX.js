@@ -1,0 +1,12 @@
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const c of r.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&a(c)}).observe(document,{childList:!0,subtree:!0});function i(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function a(e){if(e.ep)return;e.ep=!0;const r=i(e);fetch(e.href,r)}})();const l=document.querySelector(".header__button-toggle-menu"),u=document.querySelector(".header__nav"),_=document.querySelector(".page__body"),g=t=>{t.preventDefault,t.currentTarget.classList.toggle("header__button-toggle-menu_active"),u.classList.toggle("header__nav_show"),_.classList.toggle("page__body_overflow_hidden")};l.addEventListener("click",g);const p=document.querySelector(".header__buttons"),f=document.querySelector(".header__nav");screen.width<768&&f.append(p);const y="https://jsonplaceholder.typicode.com/posts",m=5,h=30,b="Loading...",s=document.querySelector(".cards"),L=s.querySelector(".cards__items"),n=s.querySelector(".cards__button-load"),v=n.querySelector(".button-primary__text").textContent,d=n.querySelector(".button-primary__text"),S=()=>{s.querySelectorAll(".cards__item").length===h?n.classList.add("button-primary_hidden"):n.classList.remove("button-primary_hidden")},q=t=>`
+    <article class="card cards__item">
+      <figure class="card__image-wrapper"><img src="./card__image.webp" alt="Image" class="card__image"></figure>
+      <div class="card__body">
+        <h3 class="card__title">${t.title}</h3>
+        <p class="card__text card__text_large">How to increase your productivity with a Music</p>
+        <p class="card__text card__text_overflow">${t.body}</p>
+        <div class="card__posted">Posted by <strong>Eugenia</strong>, on July  24, 2019</div>
+        <button type="button" class="button-secondary card__button">Continue reading</button>
+      </div>
+    </article>
+  `,C=t=>{t.forEach(o=>{L.insertAdjacentHTML("beforeend",q(o))}),S()},T=()=>{d.textContent=b,n.disabled=!0},x=()=>{d.textContent=v,n.disabled=!1},w=t=>{t.preventDefault(),T(),fetch(`${y}?_limit=${m}`).then(o=>o.json()).then(o=>C(o)).catch(o=>alert(o)).finally(()=>{x()})};n.addEventListener("click",w);
