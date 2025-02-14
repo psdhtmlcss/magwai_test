@@ -4,7 +4,6 @@ $container-width: 1720.2px;
   max-width: $container-width;
   padding-left: 50px;
   padding-right: 50px;
-  box-sizing: border-box;
 
   @media screen and (max-width: 767px) {
     padding-left: 15px;

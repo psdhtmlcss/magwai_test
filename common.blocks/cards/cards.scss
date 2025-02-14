@@ -1,0 +1,20 @@
+@use '__heading/cards__heading.scss';
+@use '__container/cards__container.scss';
+@use '__items/cards__items.scss';
+@use '__item/cards__item.scss';
+@use '__footer/cards__footer.scss';
+
+.cards {
+  padding-top: 134px;
+  padding-bottom: 256px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 44px;
+    padding-bottom: 156px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 48px;
+    padding-bottom: 43px;
+  }
+}

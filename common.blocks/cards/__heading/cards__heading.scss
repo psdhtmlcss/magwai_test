@@ -1,13 +1,12 @@
-.hero__heading {
-  max-width: 686px;
-  
+.cards__heading {
+  margin-bottom: 53px;
+
   @media screen and (max-width: 768px) {
-    font-size: 38px;
-    line-height: 46.32px;
-    max-width: 430px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 24.38px;
   }
