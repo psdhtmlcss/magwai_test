@@ -1,12 +1,17 @@
 const URL = 'https://jsonplaceholder.typicode.com/posts';
 const LOAD_LIMIT = 5;
 const CARDS_LIMIT = 30;
+const MAX_IMAGE_COUNT = 9;
 const BUTTON_LOAD_TEXT = 'Loading...';
 const cards = document.querySelector('.cards');
 const cardsItems = cards.querySelector('.cards__items');
 const buttonLoad = cards.querySelector('.cards__button-load');
 const buttonLoadTextDefault = buttonLoad.querySelector('.button-primary__text').textContent;
 const buttonLoadTextContainer = buttonLoad.querySelector('.button-primary__text');
+
+const getRandomInteger = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
 const checkCards = () => {
   const cardsCount = cards.querySelectorAll('.cards__item').length;
@@ -16,7 +21,7 @@ const checkCards = () => {
 const createCard = (data) => {
   return `
     <article class="card cards__item">
-      <figure class="card__image-wrapper"><img src="./card__image.webp" alt="Image" class="card__image"></figure>
+      <figure class="card__image-wrapper"><img src="./card__image-${getRandomInteger(1, MAX_IMAGE_COUNT)}.webp" alt="Image" class="card__image"></figure>
       <div class="card__body">
         <h3 class="card__title">${data.title}</h3>
         <p class="card__text card__text_large">How to increase your productivity with a Music</p>

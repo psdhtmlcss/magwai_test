@@ -4,12 +4,19 @@
   flex-wrap: wrap;
   padding-bottom: 60px;
 
+  @media screen and (max-width: 1440px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1366px) {
+    justify-content: center;
+  }
+
   @media screen and (max-width: 768px) {
     gap: 24px 20px;
   }
 
   @media screen and (max-width: 767px) {
-    justify-content: center;
     padding-bottom: 38px;
   }
 }
