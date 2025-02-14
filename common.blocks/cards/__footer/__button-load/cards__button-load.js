@@ -16,7 +16,7 @@ const checkCards = () => {
 const createCard = (data) => {
   return `
     <article class="card cards__item">
-      <figure class="card__image-wrapper"><img src="./common.blocks/card/__image/card__image.webp" alt="Image" class="card__image"></figure>
+      <figure class="card__image-wrapper"><img src="./card__image.webp" alt="Image" class="card__image"></figure>
       <div class="card__body">
         <h3 class="card__title">${data.title}</h3>
         <p class="card__text card__text_large">How to increase your productivity with a Music</p>
