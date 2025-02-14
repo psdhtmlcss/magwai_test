@@ -1,0 +1,1 @@
+import './__footer/__button-load/cards__button-load';

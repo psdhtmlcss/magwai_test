@@ -2,6 +2,7 @@
 @use '../mixins' as m;
 @use '__decoration/button-primary__decoration.scss';
 @use '__text/button-primary__text.scss';
+@use 'button-primary_hidden.scss';
 
 .button-primary {
   height: 60px;
@@ -22,6 +23,15 @@
 
   &:hover {
     background-color: lighten(v.$bg-button-light, 10);
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: .5;
+
+    &:hover {
+      background-color: v.$bg-button-light;
+    }
   }
 }
 
