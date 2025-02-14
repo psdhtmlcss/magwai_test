@@ -1,10 +1,8 @@
 .hero__heading {
-  max-width: 686px;
   
   @media screen and (max-width: 768px) {
     font-size: 38px;
     line-height: 46.32px;
-    max-width: 430px;
   }
 
   @media screen and (max-width: 767px) {

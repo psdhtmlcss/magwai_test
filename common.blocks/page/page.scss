@@ -1,5 +1,6 @@
 @use '../variables' as v;
 @use '__body/page__body.scss';
+@use '__body/page__body_overflow_hidden.scss';
 @use '__header/page__header.scss';
 
 .page {
