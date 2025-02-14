@@ -1,0 +1,6 @@
+@use '../../variables' as v;
+
+.button-primary__text {
+  display: inline-block;
+  transform:  skew(v.$skew-positive, 0deg);
+}

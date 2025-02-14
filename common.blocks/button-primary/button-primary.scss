@@ -1,6 +1,7 @@
 @use '../variables' as v;
 @use '../mixins' as m;
 @use '__decoration/button-primary__decoration.scss';
+@use '__text/button-primary__text.scss';
 
 .button-primary {
   height: 60px;
@@ -18,11 +19,6 @@
   color: v.$text-color-white;
   transform:  skew(v.$skew-negative, 0deg);
   @include m.transition(background-color);
-
-  span {
-    display: inline-block;
-    transform:  skew(v.$skew-positive, 0deg);
-  }
 
   &:hover {
     background-color: lighten(v.$bg-button-light, 10);
